@@ -1,0 +1,126 @@
+/*  
+Styles for:-- [Insure Landing Page]
+Author: Chisom Okoye
+Date: 03/04/2025
+Version: v1.0
+*/
+
+/* Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Variables */
+:root {
+    /* Color Palette */
+    --primary-color: #007bff; /* Example: Blue */
+    --secondary-color: #6c757d; /* Example: Gray */
+    --accent-color: #28a745; /* Example: Green */
+    --background-color: #f8f9fa; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --light-text-color: #666;
+    --white: #fff;
+    --black: #000;
+    --border-color: #dee2e6;
+  
+    /* Typography */
+    --base-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font-family: inherit; /* Can be changed for specific heading fonts */
+    --base-font-size: 16px;
+    --base-line-height: 1.5;
+  
+    /* Spacing */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+  
+    /* Border Radius */
+    --border-radius: 0.25rem;
+  
+    /* Breakpoints */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+  }
+
+/* Global Styles */
+body {
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  color: var(--text-color);
+  font-weight: 200;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+  
+/* Remove list styles on ul, ol elements which suggests default styling will be removed. */
+ul,
+ol {
+  list-style: none;
+}
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}                   
+
+/* Utility Styles  */
+.container {
+  width: 88%; /* Adjust as needed */
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Styles  */
+
+/* Navigation Styles */
+
+/* Styles for Main Content */
+
+
+/* Footer Styles */
+
+/* Responsive Styles */
+/* For small screens - Mobile - For screens less than or equal to 599px*/
+@media only screen and (max-width: 599px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+/* For medium screens - Tablets - For screens from 600px and bigger */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* For large screens - Desktops - For screens 1200px and bigger */
+@media only screen and (min-width: 1200px) {
+  
+}
+
+
