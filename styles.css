@@ -108,9 +108,7 @@ a {
 /* Responsive Styles */
 /* For small screens - Mobile - For screens less than or equal to 599px*/
 @media only screen and (max-width: 599px) {
-    body {
-      background-color: lightblue;
-    }
+  
   }
 
 /* For medium screens - Tablets - For screens from 600px and bigger */
