@@ -15,26 +15,38 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="">
-      <nav>
+    <header class="header">
+      <nav id="topnav" class="topnav container">
         <div class="logo">
           <img src="./images/logo.svg" alt="Company Logo">
         </div>
+        <ul class="sidebar">
+          <li class="mobile-menu-close" onclick=hideSidebar()>
+            <img class="mobile-logo" src="./images/logo.svg" alt="Mobile Menu Logo">
+            <a href="#" class="close-icon"><img src="./images/icon-close.svg" alt="Close icon"></a>
+          </li>
+          <li><a href="#" class="menu-item">How we work</a></li>
+          <li><a href="#" class="menu-item">Blog</a></li>
+          <li><a href="#" class="menu-item">Account</a></li>
+          <li><a href="#" class="menu-item mobile-menu-btn">View Plans</a></li>
+          <img class="mobile-nav-pattern" src="./images/bg-pattern-mobile-nav.svg" alt="mobile background pattern">
+        </ul>
         <ul class="menu">
-          <li class="menu-item">How we work</li>
-          <li class="menu-item">Blog</li>
-          <li class="menu-item">Account</li>
-          <li class="menu-item">View Plans</li>
+          <li class="hideOnMobile menu-item"><a href="#">How we work</a></li>
+          <li class="hideOnMobile menu-item"><a href="#">Blog</a></li>
+          <li class="hideOnMobile menu-item"><a href="#">Account</a></li>
+          <li class="hideOnMobile menu-item btn"><a href="#">View Plans</a></li>
+          <li class="menu-button" onclick="showSidebar()"><a href="#" class="icon"><img src="./images/icon-hamburger.svg" alt="menu icon"></a></li>
         </ul>
       </nav>
       <div class="hero">
-        <img src="./images/image-intro-mobile.jpg" alt="Intro image">
+        <div class="hero-image-mobile" ><img class="hero-image" src="./images/image-intro-mobile.jpg" alt="Intro image"></div>
         <div class="header-hero">
           <h1 class="page-title">Humanizing your insurance.</h1>
           <p class="hero-description">Get your life insurance coverage easier and faster. We blend our expertise 
             and technology to help you find the plan that’s right for you. Ensure you 
             and your loved ones are protected.</p>
-            <button class="btn"> View plans</button>
+            <button class="btn btn-dark"> View plans</button>
         </div>
       </div>
     </header>

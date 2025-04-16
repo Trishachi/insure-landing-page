@@ -1,5 +1,5 @@
 /*  
-Styles for:-- [Insure Landing Page]
+Styles for:-- [Insure Landing Page - Mobile First Design]
 Author: Chisom Okoye
 Date: 03/04/2025
 Version: v1.0
@@ -69,7 +69,6 @@ h6 {
   color: var(--text-color);
   font-weight: 400;
   line-height: 1.2;
-  text-transform: uppercase;
 }
   
 /* Remove list styles on ul, ol elements which suggests default styling will be removed. */
@@ -96,24 +95,160 @@ a {
   align-items: center;
 }
 
+.btn {
+  border: 1.5px solid var(--text-color);
+  padding: var(--space-sm) var(--space-md);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.btn-dark {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 2px solid var(--white);
+
+}
+
 /* Header Styles  */
+.hero-image {
+  width: 100%;
+}
+
+.header-hero {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);  
+}
+
+.header-hero h1,
+.header-hero p {
+  color: var(--white);
+}
+
+.page-title {
+  font-size: 3rem;
+  padding-bottom: var(--space-sm);
+}
+
+.hero-description {
+  padding-bottom: var(--space-md);
+}
 
 /* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  height: 100%;
+  text-transform: uppercase;
+  padding: 0 var(--space-sm);
+  margin: 0 var(--space-sm);
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
+.topnav .icon {
+  float: right;
+  display: block;
+ }
+
+ .menu .hideOnMobile {
+  display: none;
+ }
+
+ .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--text-color);
+}
+
+.sidebar li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.sidebar a {
+  font-family: var(--base-font-family);
+  color: var(--white); 
+  font-size: large;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.sidebar .mobile-menu-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  margin-bottom: 3rem;
+  padding: 1.2rem;
+}
+
+.mobile-menu-btn {
+  border: 2px solid var(--white);
+  padding: var(--space-md) 100px;  
+}
+
+.mobile-nav-pattern {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
 
 /* Styles for Main Content */
 
 
 /* Footer Styles */
+.footer-wrapper {
+  background-color: var(--accent-color);
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Responsive Styles */
-/* For small screens - Mobile - For screens less than or equal to 599px*/
-@media only screen and (max-width: 599px) {
-  
+/* For medium screens - Tablets - For screens from 600px and bigger */
+@media only screen and (min-width: 768px) {
+  .topnav .icon {
+    display: none;
   }
 
-/* For medium screens - Tablets - For screens from 600px and bigger */
-@media only screen and (min-width: 600px) {
-  
+  .menu .hideOnMobile {
+    display: flex;
+   }
 }
 
 /* For large screens - Desktops - For screens 1200px and bigger */
