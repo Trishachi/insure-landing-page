@@ -40,16 +40,27 @@
         </ul>
       </nav>
       <div class="hero">
-        <!-- <div class="hero-image-mobile"> -->
-          <img class="hero-image" src="./images/image-intro-mobile.jpg" alt="Intro image">
-        <!-- </div> -->
-        <div class="header-hero">
-          <h1 class="page-title">Humanizing your insurance.</h1>
-          <p class="hero-description">Get your life insurance coverage easier and faster. We blend our expertise 
-            and technology to help you find the plan that’s right for you. Ensure you 
-            and your loved ones are protected.</p>
-            <button class="btn btn-dark"> View plans</button>
+        <div class="hero-wrapper ">
+          <div class="header-hero container">
+            <h1 class="page-title">Humanizing your insurance.</h1>
+            <p class="hero-description">Get your life insurance coverage easier and faster. We blend our expertise 
+              and technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.</p>
+              <button class="btn btn-dark"> View plans</button>
+              <img class="left-pattern-mobile" src="./images/bg-pattern-intro-left-mobile.svg" alt="Background pattern on mobile view"/>
+              <img class="right-pattern-mobile" src="./images/bg-pattern-intro-right-mobile.svg" alt="Background pattern on mobile view"/>
+          </div>
+          <div class="hero-image-section">
+            <picture>
+              <source srcset="./images/image-intro-mobile.jpg"
+              media="(max-width: 540px)">
+              <img class="hero-image" src="./images/image-intro-desktop.jpg" alt="Intro image">
+            </picture>          
+          </div>
         </div>
+      
+        <img class="left-pattern-desktop" src="./images/bg-pattern-intro-left-desktop.svg" alt="Background pattern on desktop view"/>
+        <img class="right-pattern-desktop" src="./images/bg-pattern-intro-right-desktop.svg" alt="Background pattern on desktop view"/>
       </div>
     </header>
     <main class="main-wrapper container">
