@@ -282,7 +282,7 @@ main {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
   position: relative;
 }
@@ -290,11 +290,15 @@ main {
 .section-title::before {
   content: " ";
   height: 2px;
-  width: 100px;
+  width: 120px;
   position: absolute;
   background: var(--title-bar-color);
   top:-35%;
   left:35%;
+}
+
+.features-section {
+  padding-top: 5rem;
 }
 
 .features {
@@ -324,7 +328,7 @@ main {
 
 .callToAction h2 {
   color: var(--white);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   
 }
@@ -428,12 +432,26 @@ ul.footer-socials {
     flex-direction: row;
   } 
 
-   .footer-top {
+ .page-title {
+  position: relative;
+ }
+
+ .page-title::before {
+  content: " ";
+  height: 2px;
+  width: 120px;
+  position: absolute;
+  background: var(--title-bar-color);
+  top:-35%;
+  left: 0;
+}
+
+ .footer-top {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .footer-bottom {
+ .footer-bottom {
     width: 80%;
   }
 
