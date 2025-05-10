@@ -59,7 +59,7 @@ body {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: var(--white);
   }
 
 h1,
@@ -337,7 +337,7 @@ main {
 .callToAction {
   background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top right;
   background-size: 200px;
   background-color: var(--primary-color);
   padding: 4rem;
@@ -353,18 +353,14 @@ main {
 
 /* Footer Styles */
 footer {
-  /* background-image: url(./images/bg-pattern-footer-mobile.svg); */
-  background-color: var(--footer-bg-color); 
-  /* background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 500px; */
+  background-color: var(--background-color); 
+  background-image: url(./images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 500px;
 }
 
 .footer-wrapper {  
-  background-image: url(./images/bg-pattern-footer-mobile.svg); 
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 500px;  
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
@@ -415,8 +411,7 @@ ul.footer-socials {
 }
 
 .footer-socials img:hover {
-  fill: var(--text-color);
-  
+  filter: brightness(0);
 }
 
 /* Responsive Styles */
@@ -492,6 +487,10 @@ ul.footer-socials {
   top: 30%;
   right: 10%;
   bottom: -130%;
+}
+
+footer {
+  background-image: url(./images/bg-pattern-footer-desktop.svg);
 }
 
  .footer-top {
