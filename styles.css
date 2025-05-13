@@ -151,7 +151,6 @@ a {
 }
 
 .header-hero {
-  /* background-color: var(--primary-color); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,7 +356,7 @@ footer {
   background-image: url(./images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 500px;
+  background-size: 100%;
 }
 
 .footer-wrapper {  
@@ -492,6 +491,7 @@ ul.footer-socials {
 
 footer {
   background-image: url(./images/bg-pattern-footer-desktop.svg);
+  background-size: 500px;
 }
 
  .footer-top {
