@@ -200,13 +200,17 @@ a {
 }
 
 /* Navigation Styles */
+#topnav {
+  max-width: 1350px
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--space-sm) 0;
   height: 80px;
-}
+  }
 
 nav ul {
   display: flex;
@@ -346,8 +350,7 @@ main {
 .callToAction h2 {
   color: var(--white);
   font-size: 2.2rem;
-  margin-bottom: 1rem;
-  
+  margin-bottom: 1rem;  
 }
 
 
@@ -582,8 +585,6 @@ footer {
     bottom: -62%;
   }
   
-  
-
 }
 
 
